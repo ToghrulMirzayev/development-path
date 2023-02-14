@@ -21,11 +21,11 @@ First section is about Developer career path. From start here is Junior Develope
 Second section is about Company growth. From start here is Startup project with a small team. We are going to observe company growth by increasing team size. We will upgrade our Startup to Small business, Big company, Enterprise and Corporation. Below parameters to be used for upgrade:
 
 ```
-- Starup: < 3 team members
-- Small business: => 3 AND < 7 team members
-- Big company: => 7 AND < 12 team members
-- Enterprise: => 12 AND < 18 team members
-- Corporation: => 18 team members
+- Starup: < 2 team members
+- Small business: => 2 AND < 4 team members
+- Big company: => 4 AND < 7 team members
+- Enterprise: => 7 AND < 10 team members
+- Corporation: => 10 team members
 ```
 
 
