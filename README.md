@@ -1,5 +1,5 @@
 # development-path
-Fun Web App to see career promotion from Junior to Team Lead
+Fun WEB app to observe development path for single developer as well as for whole team
 
 ## Technologies
 [![Python](https://img.shields.io/badge/Python_3.8+-blue.svg)]()
