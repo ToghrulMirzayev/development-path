@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}" />
+    <title>Developer career</title>
+  </head>
+  <body>
+    <div class="center">
+      <h1>Developer Guy</h1>
+      {% if skills|length < 5 %}
+        <img src="{{ url_for('static', filename='junior.JPG') }}" alt="junior" />
+      {% elif skills|length >= 5 and skills|length < 10 %}
+        <img src="{{ url_for('static', filename='middle.JPG') }}" alt="middle" />
+      {% elif skills|length >= 10 and skills|length < 15 %}
+        <img src="{{ url_for('static', filename='senior.JPG') }}" alt="senior" />
+      {% elif skills|length >= 15 %}
+        <img src="{{ url_for('static', filename='teamlead.JPG') }}" alt="teamlead" />
+      {% endif %}
+      <h2>Available skill set</h2>
+      {% for skill in skills %}
+      <p>
+        <span style="color: rgb(255, 238, 0)">{{ skill["name"] }}</span>
+        <span style="color: rgb(0, 132, 255)">{{ skill["level"] }}</span>
+      </p>
+      {% endfor %}
+      <button class="button-back" onclick="history.back()">Back</button>
+    </div>
+  </body>
+</html>

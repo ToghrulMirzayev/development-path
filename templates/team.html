@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}" />
+    <title>Company growth</title>
+  </head>
+  <body>
+    <div class="center">
+      <h1>Company</h1>
+      {% if teams|length < 2 %}
+        <img src="{{ url_for('static', filename='startup.JPG') }}" alt="startup" />
+      {% elif teams|length >= 2 and teams|length < 4 %}
+        <img src="{{ url_for('static', filename='smallbusiness.JPG') }}" alt="smallbusiness" />
+      {% elif teams|length >= 4 and teams|length < 7 %}
+        <img src="{{ url_for('static', filename='bigcompany.JPG') }}" alt="bigcompany" />
+      {% elif teams|length >= 7 and teams|length < 10 %}
+        <img src="{{ url_for('static', filename='enterprise.JPG') }}" alt="enterprise" />
+      {% elif teams|length >= 10 %}
+        <img src="{{ url_for('static', filename='corporation.JPG') }}" alt="corporation" />
+      {% endif %}
+      <h2>Available teams</h2>
+      {% for team in teams %}
+      <p>
+        <span style="color: rgb(255, 238, 0)">{{ team["role"] }}</span>
+        <span style="color: rgb(0, 132, 255)">{{ team["count"] }}</span>
+      </p>
+      {% endfor %}
+      <button class="button-back" onclick="history.back()">Back</button>
+    </div>
+  </body>
+</html>
