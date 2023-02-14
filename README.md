@@ -1,4 +1,4 @@
-# dev-career-simulator
+# development-path
 Fun Web App to see career promotion from Junior to Team Lead
 
 ## Technologies
