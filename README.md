@@ -8,7 +8,7 @@ Fun WEB app to observe development path for single developer as well as for whol
 [![HTML](https://img.shields.io/badge/HTML-red.svg)]()
 [![CSS](https://img.shields.io/badge/CSS-red.svg)]()
 
-## Guide to start:
+## Getting Started Guide:
 * Clone this repo to your local drive
 ```commandline
 git clone https://github.com/ToghrulMirzayev/development-path.git
