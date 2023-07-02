@@ -1,7 +1,7 @@
 # Documentation
 
 ## Base URL
-Base URL is your localhost
+Web app deployed to `render.com`, so to reach out to it, you can use: `https://development-path.onrender.com`
 
 
 ## Overall description
